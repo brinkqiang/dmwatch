@@ -9,6 +9,7 @@
 int main( int argc, char* argv[] )
 {
     DMSHM_AGENT_INIT();
+
     std::cout << fmt::format("{:%Y-%m-%d %H:%M:%S}", fmt::localtime(time(NULL))) << std::endl;
     for (int i=0; i < 100; ++i)
     {
